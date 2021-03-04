@@ -2,6 +2,8 @@
 
 > Il s'agit d'un Projet Client à réaliser pour le cours de Design Web : [hepl-dw/Projet-Pankart](https://github.com/hepl-dw/projet-pankart)
 
+> Lien vers [le moodboard](https://app.milanote.com/1LavA01wpfUuad?p=4QnNqdwHnpS)
+
 ## Présentation
 
 ![Pankart logo](pankart_petit.jpg)
