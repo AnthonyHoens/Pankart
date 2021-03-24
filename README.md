@@ -143,14 +143,14 @@ Section 'présentation' :
 
 - Information sur Pankart
 - Description 
-- Call to action pour réserver une date
+- Call to action pour voir ce que le groupe fait
 
 Section 'dates' :
 
 - Titre de la section
-- Dates
-- Call to action vers la billeterie
-- Call to action vers la page agenda
+- Liste de maximum 5 prochaines dates
+- Call to action vers la billeterie si l'évènement est payant
+- Lien vers la page agenda
 
 Section 'album' :
 
@@ -164,12 +164,10 @@ Section 'album' :
 
 Section 'Coup de gueule / Coup de coeur' :
 
-- Titre de la section
+- Slider avec quelques coups de gueules / coups de coeur
+- Titre de la section qui sera un lien vers une page avec plus de contenu
 - Titre de la news
 - information de la news
-- Call to action pour aimer
-- Call to action pour partager
-- Call to action pour commenter
 
 ### Coup de coeur / Coup de gueule
 
@@ -179,14 +177,11 @@ Section 'Coup de gueule / Coup de coeur' :
 
 **Contenu :**
 
-- Listes de tout les coups de coeurs / coup de gueule
-    - Titre 
+- Listes de tous les coups de coeur / coup de gueule
+    - Titre qui sera un lien vers la page de ce coup de gueule / coeur avec plus de contenu
     - Date
     - Image s'il y en a une
     - Contenu
-    - Call to action pour aimer
-    - Call to action pour partager
-    - Call to action pour commenter
 
 ### Page presse / News
 
@@ -196,14 +191,28 @@ Section 'Coup de gueule / Coup de coeur' :
 
 **Contenu :**
 
-- Listes de tout les articles  et apparition
-    - Titre
+- Listes de tous les articles et apparition
+    - Titre qui sera un lien vers une page avec plus de contenu
     - Date
     - Image s'il y en a une
     - Contenu
-    - Call to action pour aimer
-    - Call to action pour partager
-    - Call to action pour commenter
+
+#### Page d'une news ou d'un coup de gueule / coeur
+
+**Objectif :**
+
+> Montrer la news ou le coup de gueule / coeur avec plus de contenu
+
+**Contenu :**
+
+- Titre
+- Date
+- Image s'il y en a une
+- Contenu
+- Call to action pour aimer
+- Call to action pour partager qui ouvrira une petite fenêtre pour choisir la plateforme ou la partager
+- Listes des commentaires de cette news ou coup de gueule / coeur
+    - Formulaire pour laisser un commentaire
 
 ### Page Biographie
 
@@ -227,11 +236,11 @@ Section Biographie :
 
 Section Biographie des membres :
 
-- Liste des membres du groupes
+- Liste des membres du groupes sous forme de petites cartes
     - Nom et prénom
     - Photo du membre
     - Rôle
-    - Description
+    - Mini description
     
 Section Album : 
 
@@ -259,16 +268,8 @@ Section présentation :
 
 **Contenu :**
 
-- Listes d'images des photos et vidéos du groupe
-- Call to action pour aller vers les pages 'photo' et 'vidéo'
-
-#### Page photo
-
-- Listes de toute les photos
-
-#### Page vidéo
-
-- Listes de toutes les vidéos
+- Listes d'images des photos et vidéos du groupe par dates de concert
+- La liste sera fait en lazy loading, une technique qui fera apparaître les éléments au fur et à mesure que l'utilisateur scroll sur la page.
 
 ### Agenda
 
@@ -289,7 +290,7 @@ Section 'Date' :
 - Date
 - Lieu
 - Description
-- Call to action vers la billeterie
+- Call to action vers la billeterie si l'évènement est payant
 
 ### Lyrics
 
