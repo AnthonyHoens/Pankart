@@ -1,0 +1,34 @@
+@import "reset";
+@import "font";
+
+html {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Russo One', sans-serif;
+}
+
+body, body * {
+	box-sizing: border-box;
+}
+
+.sro {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+
+@import "parts/header";
+@import "parts/all_page";
+@import "parts/footer";

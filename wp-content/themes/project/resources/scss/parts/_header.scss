@@ -1,0 +1,150 @@
+.header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 5%;
+	z-index: 800;
+
+	&__title {
+		order: 1;
+	}
+
+	&__logo {
+		display: block;
+		text-indent: 9999px;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 100px;
+		overflow: hidden;
+
+		& img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	&__burger {
+		display: block;
+		order: 0;
+	}
+
+
+	.nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.8);
+		z-index: 900;
+		transform: translateX(-100%);
+		transition: .6s ease;
+
+		&__open {
+			transform: translateX(0);
+		}
+
+		&__ul {
+			display: block;
+			text-align: center;
+		}
+
+		&__item {
+			display: block;
+
+			&:not(:last-of-type) {
+				margin-bottom: 1rem;
+			}
+		}
+
+		&__link {
+			display: block;
+			font-family: 'Russo One', sans-serif;
+			font-size: 1rem;
+			min-width: 15.25rem;
+			color: rgba(255, 255, 255, 0.7);
+			text-decoration: none;
+			transition: .5s ease;
+
+			&:not(.nav__active):hover, &:not(.nav__active):focus {
+				color: rgba(255, 255, 255, 1);
+			}
+		}
+
+		&__active {
+			color: #191919;
+			padding: 2rem;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-image: url('https://www.pankart.anthony-hoens.be/wp-content/themes/project/public/img/model-' + random(4) +'.svg');
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		& {
+			padding: 2.5rem 4rem;
+			background-repeat: repeat-x;
+			background-size: auto 100%;
+			background-image: url('https://www.pankart.anthony-hoens.be/wp-content/themes/project/public/img/background-header.svg');
+			background-position: center;
+			border: none;
+			background-color: transparent;
+
+			&__burger {
+				display: none;
+			}
+
+
+			.nav {
+				position: relative;
+				height: auto;
+				background-color: transparent;
+				transform: translateX(0);
+
+				&__item {
+					display: inline-block;
+
+					&:not(:last-of-type) {
+						margin-bottom: 0;	
+						margin-right: 1rem;	
+					}
+				}
+
+				&__link {
+					color: rgba(25, 25, 25, 0.5);
+					min-width: auto;
+
+					&:not(.nav__active):hover, &:not(.nav__active):focus {
+						color: rgba(25, 25, 25, 0.9);
+					}
+				}
+
+				&__active {
+					color: rgba(25, 25, 25, 1);
+					padding: 0;
+					background: transparent;
+				}
+			} 
+		}
+	}
+
+	@media screen and (min-width: 1580px) {
+		& {
+			padding: 2.5rem 6rem;
+		}
+	}
+
+	@media screen and (min-width: 1740px) {
+		& {
+			padding: 2.5rem calc((100vw - 1740px) / 2);
+		}
+	}
+}

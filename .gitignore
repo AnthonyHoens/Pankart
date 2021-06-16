@@ -1,0 +1,15 @@
+/*
+
+!.gitignore
+!package.json
+!/design-utility
+
+
+!/wp-content
+/wp-content/*
+!/wp-content/themes
+/wp-content/themes/*
+!/wp-content/themes/project
+/wp-content/themes/project/public/*
+
+!README.md
